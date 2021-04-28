@@ -1,12 +1,11 @@
 {
-    "name": "hisamu/php-xbase",
+    "name": "avgrevtsova/php-xbase",
     "type": "library",
     "description": "A simple parser for *.dbf, *.fpt files using PHP",
     "keywords": ["dbase", "dbf", "foxpro"],
-    "homepage": "https://github.com/luads/php-xbase",
+    "homepage": "https://github.com/AVGrevtsova/php-xbase",
     "license": "MIT",
-    "authors": [
-        {
+    "authors": [{
             "name": "Luã de Souza",
             "email": "lsouza@codeinc.com.br"
         },

@@ -42,8 +42,7 @@ class DBase4Memo extends AbstractWritableMemo
         }
 
         $memoLength = unpack('L', $this->fp->read(self::BLOCK_LENGTH_LENGTH));
-        $result = $this->fp->read($memoLength[1]);
-//        $result = $this->fp->read($memoLength[1] - self::BLOCK_SIGN_LENGTH - self::BLOCK_LENGTH_LENGTH);
+        $result = $this->fp->read($memoLength[1] - self::BLOCK_SIGN_LENGTH - self::BLOCK_LENGTH_LENGTH);
 
         $info = $this->guessDataType($result);
         assert(isset($info['type']));
